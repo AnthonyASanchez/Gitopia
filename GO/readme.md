@@ -21,6 +21,6 @@ We claimed it was a law, that [Moore](https://en.wikipedia.org/wiki/Moore%27s_la
 In a distributed world we need a distributed minded language. Other languages such as C++, Java, Python were never built for concurrency. They have concurrency as features with multithreading interfaces,etc.. but they did not have concurrency in mind when they built the language. This is where Go's goroutines come in handy (will be explained below).<br/>
 ### How?
 Lets talk a little about concurrency...<br/>
-Concurrency is when multiple processes are being executed at the same time. This is not the same as parellelism in which you execute the same process at the same exact time.<br/>
+Concurrency is when multiple processes are being executed at the same time. This is not the same as parellelism, parallelism is the simultaneous execution of (possibly related) computations<br/>
 One perfect example is Ford's assembly line when they first open in the early 1900's. While some people made the doors, others made the seats, and others made the engine. All these concurrent processes increasing the throughput, the amount of cars the assembly line could make in a given hour.<br/>
-Notice, Ford added more workers, more labor but it made the process faster. Meaning More work != More time spent.
+Notice, Ford added more workers, more labor but it made the process faster. Meaning More work != More time spent.<br/>
