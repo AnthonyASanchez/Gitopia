@@ -24,3 +24,7 @@ Lets talk a little about concurrency...<br/>
 Concurrency is when multiple processes are being executed at the same time. This is not the same as parellelism, parallelism is the simultaneous execution of (possibly related) computations<br/>
 One perfect example is Ford's assembly line when they first open in the early 1900's. While some people made the doors, others made the seats, and others made the engine. All these concurrent processes increasing the throughput, the amount of cars the assembly line could make in a given hour.<br/>
 Notice, Ford added more workers, more labor but it made the process faster. Meaning More work != More time spent.<br/>
+#### Goroutines
+Like threads they execute things concurrently but they are different, they are much lighter. i.e They take up around 2Kb in comparison to 1 MB that Java uses for threads. They dynamically grow on a stack allowing for thousands even millions of goroutines to be used simultaneously. This is great! We can now do things at the same time just like the assembly line...but wait a minute, we have these assembly workers (goroutines) working at the same time but how do they hand off task to each other, how does the window make talk to the door installer (made up job titles). Well in go we use channels.<br/>
+#### Channels
+Channels are types values that allow goroutines to synchronize and exchange information. Just like the assembly worker would need a time to come together in the assembly line (synchronize) to hand the other the window (exchange information). A channel serves this exact purpose, 
