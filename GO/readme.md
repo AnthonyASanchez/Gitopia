@@ -2,6 +2,7 @@
 
 ## Table of Contents
 1. [Go! where?](#go-where?)
+2. [Give golang some Gin and get it talking](#give-golang-some-gin-and-get-it-talking)
 
 
 ## Go from where?
@@ -9,12 +10,14 @@ What is go, why do we need it and how does it help us accomplish tasks better th
 Built in 2007 by some smart engineers @ Google, Go (formally known as Golang) is a modern programming language that has great features such as:
 - Compiled
 - Goroutines
+- Channels
+- Wait groups
 - Type Inference
 - Pointer Arithmetic
 - Garbage collection
 - Method and Operator Overloading 
 
-These will be explained below but first, why? Why did the smart engineers feel the need to create Go!?<br/>
+This section will explain a few of those featues unique to go but first, why? Why did the smart engineers feel the need to create Go!?<br/>
 ### Why?
 We claimed it was a law, that [Moore](https://en.wikipedia.org/wiki/Moore%27s_law) was right and would always be right. But unfortunately Moore's law was not so much as a law as it was a trend. But since the early 2000's hardware has stopped drastically increasing in speed. So, with know where left to turn some people decided to Go! and make a new language. Hoping to increase software efficiency to keep up with the demanding speeds of the 21st century.<br/>
 ### What makes it better?
@@ -77,7 +80,7 @@ func main() {
 ```
 
 #### Channels
-Channels are types values that allow goroutines to synchronize and exchange information. Just like the assembly worker would need a time to come together in the assembly line (synchronize) to hand the other the window (exchange information). A channel serves this exact purpose. In the example with the wait groups, although we saw synchronization, we didn't see any exhange of information, the workers did not hand off car parts. In the example below, the car door make, needs the car window from the car window maker(...I know I should be a project manager at Ford...)</br>
+Channels are types values that allow goroutines to synchronize and exchange information. Just like the assembly worker would need a time to come together in the assembly line (synchronize) to hand the other the window (exchange information). A channel serves this exact purpose. In the example with the wait groups, although we saw synchronization, we didn't see any exhange of information, the workers did not hand off car parts. In the example below, the car door make, needs the car window from the car window maker(...I know I should be a project manager at Ford...)<br/>
 ```
 package main
 import (
@@ -112,3 +115,11 @@ func main() {
 }
 ```
 And just like magic, the seperate goroutines can talk to each other through channels.
+## Give golang some Gin and get it talking
+If you are building a server in Golang, it would be nice to have a microframework(minimalistic web application frameworks) that will help get your server talking. Lucky for use there is Gin, an awesome microframework that has essential components for building request functionality to your server. Some of the highlights of Gin are</br>
+- Speed: Gin is built for speed. The framework offers a Radix tree based routing, small memory foot print. No reflection. - Predictable API performance.
+- Crash-Free: Gin has the capability of catching crashes or panics during runtime, and can recover from it, this way your application will be always available.
+- Routing: Gin provides a routing interface to allow you express how your web application or API routes should look.
+- JSON Validation: Gin can parse and validate the JSON requests easily, checking for the existence of required values.
+- Error Management: Gin provides a convenient way to collect all the errors occurred during a HTTP request. Eventually, a middleware can write them to a log file, to a database and send them through the network.
+- Built-In Rendering: Gin provides an easy to use API for JSON, XML, and HTML rendering.
