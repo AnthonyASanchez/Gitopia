@@ -22,3 +22,4 @@ then able to replace failing nodes with other working ones. Which is much better
 node.<br/>
 How a deployed application looks.
 ![](https://github.com/AnthonyASanchez/Gitopia/blob/master/Production/imgs/kub_cluster.svg)
+When runnning kubernetes on the cloud, you will commonly hear the os 'CoreOS', it is the leading container operating system that is designed to run at a massive scale.<br/>
