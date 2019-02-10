@@ -14,3 +14,10 @@ Some terminology:
 ### How?
 Getting into the niddy griddy of how it works.<br/>
 You have a master node that controls traffic flow to worker nodes routing traffic through K8s API.
+### Kubernetes Deployment
+In order to deploy an application you need to specify a 'Deployment Configuration'. Once this is defined the master 
+controller will schedule the release to individual nodes in cluster. <br/>
+Then a 'Kubernetes Deployment Controller' (KDC) will moniter the instances the application was deployed on. The KDC is 
+then able to replace failing nodes with other working ones. Which is much better than DevOps having to manually deply another 
+node.<br/>
+
