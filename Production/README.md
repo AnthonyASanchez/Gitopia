@@ -20,4 +20,5 @@ controller will schedule the release to individual nodes in cluster. <br/>
 Then a 'Kubernetes Deployment Controller' (KDC) will moniter the instances the application was deployed on. The KDC is 
 then able to replace failing nodes with other working ones. Which is much better than DevOps having to manually deply another 
 node.<br/>
-![alt text](https://raw.githubusercontent.com/AnthonyASanchez/Gitopia/master/Production/imgs/kub_cluster.svg)
+How a deployed application looks.
+![](https://github.com/AnthonyASanchez/Gitopia/blob/master/Production/imgs/kub_cluster.svg)
